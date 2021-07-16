@@ -39,25 +39,39 @@ class _MyCardState extends State<MyCard> {
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(15),
                         topRight: Radius.circular(15))),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text(
-                      "熱門頻道聊天室",
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 25,
-                        fontWeight: FontWeight.bold,
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 18,),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
+                        child: Container(
+                          width: 96,
+                          height: 36,
+                          child: Text(
+                            "新聞聊什麼",
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
                       ),
-                    ),
-                    Container(
-                      width: 30,
-                      height: 30,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                              image: AssetImage("images/path.png"))),
-                    )
-                  ],
+                      SizedBox(width: 190,),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 13),
+                        child: Container(
+                          width: 30,
+                          height: 30,
+                          decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage("images/path.png"))),
+                        ),
+                      )
+                    ],
+                  ),
                 )),
             Container(
               child: Padding(
@@ -128,7 +142,7 @@ class SmallScreens extends StatelessWidget {
       children: [
         Container(
           height: 62,
-          width: 110,
+          width: 110, 
           
           decoration: BoxDecoration(
             // color: Colors.transparent,
@@ -136,7 +150,7 @@ class SmallScreens extends StatelessWidget {
                 image: NetworkImage("https://s3-alpha-sig.figma"
                     ".com/img/a978/8d3e/b8eec9e53a73a1fd0b9e87235bd55422?Expires=1626652800&Signature=TS6JrCIs4n6uWs7iOkOPDYxSt2-XeL0DAbWhVL2ot6PLKX3A5i70djBOwGm56bPQpFvh6b1OST2ocs1prQf2mdkTHrwJwnhRo565wIHDiaFKBDaEJGgMN2InruaLCspidTpwDEubxizvjWVJHpBrpZZyU2x3HL0XrYOr74-1fYRzbnO8~PiCSL7zxOE08IxUTeGg9npj-I9uOQgez41RzDrrCe6wnNUyehYFvdRVpYU0gGDzLmRZ8JSS5tuu6yeKCbffRy6rq9ZPoIZ6qoHwXEtBH9i7EWtF2k0b8NIlQ~GzEbRyBQPb5r8AXv32Q83FDUXMzXC~3kiRRqfSNRTaTg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"),
                 fit: BoxFit.fill),
-            // borderRadius: BorderRadius.all(Radius.circular(50)),
+            borderRadius: BorderRadius.all(Radius.circular(8)),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
